@@ -50,11 +50,15 @@
     
         $pliki = scandir(dirname(__FILE__).'/Zadania/');
         foreach($pliki as $plik){
-            //if(is_dir($plik) /*AND $plik != '.' AND $plik != '..'*/){
+            if($plik == "." OR $plik == "..") continue;
+            if(file_exists("Zadania/".$plik."/cardImage.png")) {$isImg = true;} else {$isImg = false;}
                 echo '
                 <li class="card">
                 <div class="card_bg">
-                <img src="g/placeholder_cart.png" class="cardimg" data-link="'.$plik.'">
+                <div class="dataHolder" hidden data-dir="'.$plik.'" data-isimg="'.$isImg.'"></div>
+                <a href="/Workstation/Zadania/'.$plik.'/index.php">
+                    <img src="g/placeholder_cart.png" class="cardimg">
+                </a>
             </div>
         </li>
                 ';
@@ -62,17 +66,24 @@
         }
     ?>
     </ul>
-               
+                
         <script>
             var cards = document.querySelectorAll(`ul.jsLocatorCards li.card`);
 
             cards.forEach(e => {
                 var img     = e.querySelector(`img.cardimg`);
-                var name    = img.dataset.link;
+                var dataDiv = e.querySelector(`div.dataHolder`);
+                var isImg   = dataDiv.dataset.isimg;
+                var name    = dataDiv.dataset.dir;
                 var path    = window.location.pathname.replace('apps.php','');
                 var url     = window.location.protocol+`//`+window.location.hostname;
                 console.log(url);
-                img.src     = url+`/Zadania/`+name+`/cardImage.png`;
+                
+                if(isImg == true){
+                    img.src     = url+`/Workstation/Zadania/`+name+`/cardImage.png`;
+                }else{
+                    img.src     = url+`/Workstation/g/defaultCardImage.png`;
+                }
             })
         </script>
                 </div>

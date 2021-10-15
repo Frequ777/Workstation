@@ -8,7 +8,7 @@
 <body>
 Wpisz kolor aby wyświetlić jego odpowiednik w kodzie RGB.
     
-    <form action="Podanie koloru RGB.php" method="GET">
+    <form action="index.php" method="GET">
   Wpisz kolor: <input type=text name="$kolor"/><br/>
         <input type="submit" value="Sprawdź" /></form>
     

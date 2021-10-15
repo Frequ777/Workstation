@@ -7,7 +7,7 @@
     </head>
 <body>
 Wpisz numer dnia tygodnia (od 1 do 7) aby wyświetlić nazwe tygodnia.
-    <form action="Numery_tygodnia.php" method="GET">
+    <form action="index.php" method="GET">
   Wpisz numer dnia tygodnia: <input type=text name="$numertygodnia"/><br/>
         <input type="submit" value="Sprawdź" /></form>
     
