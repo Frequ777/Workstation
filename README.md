@@ -6,4 +6,4 @@ Workstation Website is my small first project that I have been creating for some
 Special Thanks to @Furbysz for making script for my website!
 
 ! --- Warning --- !
-I suggest you using joystix font that you can download with website.
+I suggest you using joystix font that you can download with website!
