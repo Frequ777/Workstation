@@ -1,0 +1,134 @@
+body{
+    background-color: #181A25;
+    color: azure;
+    font-size: 28px;
+    font-family: 'Inconsolata', monospace;
+    transition-duration: 0.2s;
+}
+#logo{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+width: 50%;
+}
+
+#bot{
+    text-align: center;
+    font-size: 45spx;
+}
+
+#container{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    transition-duration: 0.2s;
+}
+
+#keyword{
+    width: 900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    min-height: 60px;
+}
+#game{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+}
+#alp{
+    float: left;
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+}
+.litera
+{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid gray;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+    transition-duration: 0.8s;
+}
+.litera:hover
+{
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+    transition-duration: 0.2s;
+    border-radius: 10px;
+}
+.reset
+{
+    color: green;
+    cursor: pointer;
+    font-size: 48px;
+    transition-duration: 0.8s;
+}
+.reset:hover
+{
+    color: white;
+    transition-duration: 0.2s;
+}
+
+input[type=password] {
+        border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  width: 20%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid gray ;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: #181A25;
+        margin-bottom: 20px;
+}
+
+input[type=password]:focus {
+  border: 3px solid #999999;
+    border-radius: 10px;
+}
+
+input[type=password]:hover {
+  border: 3px solid white;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  width: 12%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 3px solid gray ;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  background-color: #181A25;
+    margin-bottom: 20px;
+}
+
+input[type=submit]:hover {
+  border: 3px solid white;
+    border-radius: 5px;
+}
+#haslotext{
+    text-align: center;
+}
